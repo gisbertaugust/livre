@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REVISÃO JAVASCRIPT</title>
+	<script>
+		function cadastrarNome() {
+			let nome = document.getElementById('inputName').value
+			let idade = document.getElementById('numberIdade').value
+			document.getElementById('exibidorTexto').innerHTML = "Seu nome é: " + nome + " e sua idade é: " + idade + " anos"
+		}
+	</script>
+</head>
+<body>
+	<label for="inputName">NOME: </label>
+	<input type="text" name="inputName" id="inputName">
+	<label for="">IDADE: </label>
+	<input type="number" id="numberIdade">
+	<input type="button" value="CADASTRAR" onclick="cadastrarNome()">
+	<h2 id="exibidorTexto"></h2>
+</body>
+</html>
